@@ -13,7 +13,9 @@ public class CameraPlusAddon extends LabyAddon<CameraPlusConfiguration> {
     protected void enable() {
         this.registerSettingCategory();
         this.cameraController = new CameraController(this.configuration(), new CollisionResolver(this.configuration()));
+        this.registerListener(this);
         this.registerListener(new CameraLifecycleListener(this.cameraController));
+        this.registerListener(new CameraHotkeyListener(this.configuration(), this.cameraController));
         this.cameraController.applyPreset("Default");
         this.logger().info("Camera+ enabled");
     }

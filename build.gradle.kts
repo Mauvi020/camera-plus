@@ -22,11 +22,11 @@ labyMod {
     }
 
     addonInfo {
-        namespace = "camera-plus"
+        namespace = "camera_plus"
         displayName = "Camera+"
         author = "Mauvi"
-        description = "Professional camera and perspective tools for LabyMod on Minecraft 1.21."
-        minecraftVersion = "1.21"
+        description = "Professional camera and perspective tools for LabyMod on Minecraft 1.21 and 26.3."
+        minecraftVersion = "26.3"
         version = rootProject.version.toString()
     }
 }
